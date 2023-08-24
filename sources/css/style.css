@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Lobster&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Lobster&display=swap');
+body {
+    background-image: url(../../bargar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: sticky;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    
+}
+.countdown-items {
+    margin: 0;
+    display: grid;
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.countdown-items.items1 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.countdown-items.items2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.ota-item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    cursor: pointer;
+}
+.ota-item div {
+    flex-basis: 200px;
+    padding: 30px 40px;
+    color: aliceblue;
+}
+.ota-item div p {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.ota-item div span {
+    font-size: 20px;
+}
+.ota-item1 {
+    border: 3px solid white;
+    background-color: rgba(000, 000, 000, .3);
+    border-radius: 10px;
+}
+
+.ota-item2 {
+    box-shadow: 2px 2px 15px 2px #101010;
+    background-color: rgba(000, 000, 000, .3);
+    border-radius: 10px;
+}
+.ota-item2 div p{
+    letter-spacing: 3px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: none;
+    
+}
+.ota-item3 {
+    background-color: aliceblue;
+   
+}
+.ota-item3 div {
+    color: #101010;
+}
+.ota-item3 div p {
+    font-family: 'Cute Font', cursive ;
+    font-size: 70px;
+}
+.ota-item3 div span {
+    font-family: 'Lobster', cursive;
+    font-size: 23px;
+}
+.ota-item5 {
+    border: 3px solid white;
+    display:inline-block;
+}
+.ota-item5 div {
+    padding: 0;
+    
+}
+.ota-item5 div p {
+    margin-left: 50px;
+    display: inline-block;
+    font-size: 50px;
+}
+.ota-item5 div span {  
+margin-left: 50px;
+margin-top: 0;
+font-size: 26px;
+
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .countdown-items.items1 {
+        width: 100%;
+        margin: 0;
+        padding-top: 50px;
+        }
+    .ota-item div {
+        flex-basis: 200px;
+        padding: 30px 0px;
+        padding-left: 20px;
+    }
+}
